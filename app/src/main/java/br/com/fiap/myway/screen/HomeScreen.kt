@@ -18,7 +18,7 @@ fun HomeScreen (modifier: Modifier = Modifier, navController: NavController) {
 
     Surface(
     modifier = Modifier.fillMaxSize(),
-        color = Color(0xFF03A9F4)
+        color = Color(0xFFAE6DE6)
 
 
     ) {
