@@ -1,5 +1,6 @@
 package br.com.fiap.myway.screen
 
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -15,7 +16,9 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.R
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
@@ -65,7 +68,7 @@ fun LoginScreen (modifier: Modifier = Modifier, navController: NavController) {
                 {
            Column {
                Text(
-                   text = "Login",
+                   text = "MyWay",
                    fontSize = 48.sp,
                    fontWeight = FontWeight.Bold,
                    color = Color.White
@@ -77,6 +80,22 @@ fun LoginScreen (modifier: Modifier = Modifier, navController: NavController) {
 
 
                 )
+
+
+          Image(
+              painter = painterResource(id =br.com.fiap.myway.R.drawable.bim_fiap ),
+              contentDescription ="Descrição da imagem",
+              modifier = Modifier
+                  .fillMaxWidth()
+                  .padding(top = 16.dp)
+
+
+              )
+
+
+
+
+
 
            }
       Column(
