@@ -47,100 +47,39 @@ fun HomeScreen (modifier: Modifier = Modifier, navController: NavController) {
 
     ) {
 
-// --- formulário
         Column(
+            horizontalAlignment = Alignment.CenterHorizontally,
             modifier = Modifier
+
                 .fillMaxWidth()
-                .padding(horizontal = 32.dp)
+                .height(160.dp)
+
+
         ) {
-            Card(
+
+            Image(
+                painter = painterResource(id = R.drawable.map_fiap),
+                contentDescription = "Logo",
                 modifier = Modifier
-                    .offset(y = (-30).dp)
-                    .fillMaxWidth()
-                    .height(500.dp),
-                colors = CardDefaults
-                    .cardColors(containerColor = Color(0xfff9f6f6)),
-                elevation = CardDefaults.cardElevation(4.dp)
-            ) {
-                Column(
-                    modifier = Modifier.padding(
-                        vertical = 16.dp,
-                        horizontal = 32.dp
-                    )
-                ) {
-                    Text(
-                        text = "Seus dados",
-                        modifier = Modifier.fillMaxWidth(),
-                        fontSize = 24.sp,
-                        fontWeight = FontWeight.Bold,
-                        color = colorResource(id = R.color.teal_700),
-                        textAlign = TextAlign.Center
-                    )
-                    Spacer(modifier = Modifier.height(32.dp))
-                    Text(
-                        text = "Seu peso",
-                        modifier = Modifier.padding(bottom = 8.dp),
-                        fontSize = 12.sp,
-                        fontWeight = FontWeight.Normal,
-                        color = colorResource(id = R.color.teal_700)
-                    )
-                    OutlinedTextField(
-                        value = "",
-                        onValueChange = {},
-                        modifier = Modifier.fillMaxWidth(),
-                        placeholder = {
-                            Text(text = "Seu peso em Kg.")
-                        },
-                        colors = OutlinedTextFieldDefaults.colors(
-                            unfocusedBorderColor = colorResource(id = R.color.purple_200),
-                            focusedBorderColor = colorResource(id = R.color.purple_200)
-                        ),
-                        shape = RoundedCornerShape (16.dp),
-                        keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number)
-                    )
-                    Spacer(modifier = Modifier.height(16.dp))
-                    Text(
-                        text = "Sua altura",
-                        modifier = Modifier.padding(bottom = 8.dp),
-                        fontSize = 12.sp,
-                        fontWeight = FontWeight.Normal,
-                        color = colorResource(id = R.color.purple_200)
-                    )
-                    OutlinedTextField(
-                        value = "",
-                        onValueChange = {},
-                        modifier = Modifier.fillMaxWidth(),
-                        placeholder = {
-                            Text(
-                                text = "Sua altura em cm."
-                            )
-                        },
-                        colors = OutlinedTextFieldDefaults.colors(
-                            unfocusedBorderColor = colorResource(id = R.color.purple_500),
-                            focusedBorderColor = colorResource(id = R.color.purple_500)
-                        ),
-                        shape = RoundedCornerShape(16.dp),
-                        keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Decimal)
-                    )
-                    Spacer(modifier = Modifier.height(16.dp))
-                    Button(
-                        onClick = {},
-                        modifier = Modifier
-                            .fillMaxWidth()
-                            .height(48.dp),
-                        shape = RoundedCornerShape(16.dp),
-                        colors = ButtonDefaults.buttonColors(containerColor = colorResource(id = R.color.purple_500))
-                    ) {
-                        Text(
-                            text = "CALCULAR",
-                            fontWeight = FontWeight.Bold,
-                            color = Color.White,
-                            fontSize = 14.sp
-                        )
-                    }
-                }
-            }
+                    .size(60.dp)
+                    .padding(top = 16.dp)
+            )
+
+
+
+            Text(
+                text = "My Way",
+                fontSize = 24.sp,
+                color = Color.White,
+                fontWeight = FontWeight.Bold,
+                modifier = Modifier.padding(top = 12.dp, bottom = 24.dp)
+
+
+            )
+
+
         }
+
 
 
 
@@ -179,7 +118,15 @@ fun HomeScreen (modifier: Modifier = Modifier, navController: NavController) {
     }
 
 
+
+
+
 }
+
+
+
+
+
 
 
 @Preview(showBackground = true, showSystemUi = true)
