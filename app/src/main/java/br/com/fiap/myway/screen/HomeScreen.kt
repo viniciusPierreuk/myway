@@ -2,7 +2,16 @@ package br.com.fiap.myway.screen
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
-import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.Button
@@ -24,7 +33,7 @@ fun HomeScreen(modifier: Modifier = Modifier, navController: NavController) {
 
     Surface(
         modifier = Modifier.fillMaxSize(),
-        color = Color(0xFF03A9F4)
+        color = Color(0xFF352F30)
     ) {
         Column(
             modifier = Modifier
@@ -39,17 +48,19 @@ fun HomeScreen(modifier: Modifier = Modifier, navController: NavController) {
                 modifier = Modifier
                     .fillMaxWidth()
                     .padding(10.dp)
-                    .background(colorResource(id = R.color.vermelho_fiap))
+                    .height(150.dp)
+                    .background(colorResource(id = R.color.azul))
 
             ) {
                 Image(
                     painter = painterResource(id = R.drawable.map_fiap),
                     contentDescription = "Logo",
-                    modifier = Modifier.size(30.dp)
+                    modifier = Modifier.size(60.dp)
                 )
                 Spacer(modifier = Modifier.width(10.dp))
                 Text(
-                    text = "MobGov",
+                    text = "Myway",
+
                     color = Color.White,
                     modifier = Modifier.align(Alignment.CenterVertically)
                 )
@@ -60,7 +71,9 @@ fun HomeScreen(modifier: Modifier = Modifier, navController: NavController) {
             // Welcome Section
             Column(
                 horizontalAlignment = Alignment.CenterHorizontally,
-                modifier = Modifier.padding(20.dp)
+                modifier = Modifier
+                    .padding(20.dp)
+                    .background(colorResource(id = R.color.azul))
             ) {
                 Text(
                     text = "Bem-vindo ao time!",
@@ -68,7 +81,7 @@ fun HomeScreen(modifier: Modifier = Modifier, navController: NavController) {
                     modifier = Modifier.align(Alignment.CenterHorizontally)
                 )
                 Text(
-                    text = "MobGov é um aplicativo destinado a ajudar na acessibilidade urbana, permitindo que os usuários marquem e compartilhem locais acessíveis e não acessíveis na cidade.",
+                    text = "MyWay é um aplicativo destinado a ajudar os motoristas a terem um trajeto seguro, possibilitando que os usuários marquem  ruas, estradas e trajetos não seguros   para o motorista.  ",
                     color = Color.White,
                     modifier = Modifier.align(Alignment.CenterHorizontally)
                 )
@@ -87,10 +100,13 @@ fun HomeScreen(modifier: Modifier = Modifier, navController: NavController) {
             // Main Features Section
             Column(
                 horizontalAlignment = Alignment.Start,
-                modifier = Modifier.padding(20.dp)
+                modifier = Modifier
+                    .padding(20.dp)
+
+                    .background(colorResource(id = R.color.azul))
             ) {
                 Text(text = "Funcionalidades Principais", color = Color.White)
-                Text(text = "• Marcar locais acessíveis e não acessíveis", color = Color.White)
+                Text(text = "• Marcar rotas recomendados e não recomendados para dirigir(dependendo do horário) ", color = Color.White)
                 Text(text = "• Compartilhar informações com outros usuários", color = Color.White)
                 Text(text = "• Buscar por locais específicos", color = Color.White)
                 Text(text = "• Ver rotas e pontos de interesse próximos", color = Color.White)
