@@ -1,6 +1,7 @@
 package br.com.fiap.myway.screen
 
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
@@ -11,6 +12,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
@@ -24,15 +26,19 @@ fun MapScreen(modifier: Modifier = Modifier, navController: NavController) {
 
     Surface(
         modifier = Modifier.fillMaxSize(),
-        color = Color(0xFFAE6DE6)
+
+        color = Color(0xFF5865DB)
+
     ) {
         Column(
             modifier = Modifier
                 .fillMaxSize()
                 .padding(16.dp)
-                .verticalScroll(rememberScrollState()), // Permite rolagem na tela
+                .verticalScroll(rememberScrollState()),
+
             verticalArrangement = Arrangement.Center,
             horizontalAlignment = Alignment.CenterHorizontally
+
         ) {
 
             Text(
@@ -56,13 +62,13 @@ fun MapScreen(modifier: Modifier = Modifier, navController: NavController) {
                 painter = painterResource(id = R.drawable.map2_fiap),
                 contentDescription = "Mapa Simulado",
                 modifier = Modifier
-                    .size(300.dp) // Define o tamanho da imagem
+                    .size(300.dp)
                     .padding(top = 16.dp)
             )
 
             Spacer(modifier = Modifier.height(16.dp))
 
-            // Legenda
+
             Column(
                 horizontalAlignment = Alignment.Start,
                 modifier = Modifier.fillMaxWidth()
@@ -72,19 +78,19 @@ fun MapScreen(modifier: Modifier = Modifier, navController: NavController) {
                 Spacer(modifier = Modifier.height(8.dp))
 
                 Row(verticalAlignment = Alignment.CenterVertically) {
-                    Text(text = "😊 Acessível", color = Color.White)
+                    Text(text = "😊 Rota segura", color = Color.White)
                 }
 
                 Spacer(modifier = Modifier.height(8.dp))
 
                 Row(verticalAlignment = Alignment.CenterVertically) {
-                    Text(text = "😢 Não Acessível", color = Color.White)
+                    Text(text = "😢 Rota Não segura", color = Color.White)
                 }
 
                 Spacer(modifier = Modifier.height(8.dp))
 
                 Row(verticalAlignment = Alignment.CenterVertically) {
-                    Text(text = "🛠️ Em Manutenção", color = Color.White)
+                    Text(text = "🛠️ Pista em construção", color = Color.White)
                 }
 
                 Spacer(modifier = Modifier.height(8.dp))
