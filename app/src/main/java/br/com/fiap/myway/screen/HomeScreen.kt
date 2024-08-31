@@ -45,25 +45,28 @@ fun HomeScreen(modifier: Modifier = Modifier, navController: NavController) {
             // Navbar Section
             Row(
                 verticalAlignment = Alignment.CenterVertically,
+                horizontalArrangement = Arrangement.Center,
                 modifier = Modifier
                     .fillMaxWidth()
                     .padding(10.dp)
                     .height(150.dp)
                     .background(colorResource(id = R.color.azul))
-
             ) {
-                Image(
-                    painter = painterResource(id = R.drawable.map_fiap),
-                    contentDescription = "Logo",
-                    modifier = Modifier.size(60.dp)
-                )
-                Spacer(modifier = Modifier.width(10.dp))
-                Text(
-                    text = "Myway",
-
-                    color = Color.White,
+                Column(
+                    horizontalAlignment = Alignment.CenterHorizontally,
                     modifier = Modifier.align(Alignment.CenterVertically)
-                )
+                ) {
+                    Image(
+                        painter = painterResource(id = R.drawable.map_fiap),
+                        contentDescription = "Logo",
+                        modifier = Modifier.size(60.dp)
+                    )
+                    Spacer(modifier = Modifier.height(5.dp))
+                    Text(
+                        text = "Myway",
+                        color = Color.White
+                    )
+                }
             }
 
             Spacer(modifier = Modifier.height(20.dp))
