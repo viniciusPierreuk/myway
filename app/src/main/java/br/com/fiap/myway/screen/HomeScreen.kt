@@ -84,7 +84,7 @@ fun HomeScreen(modifier: Modifier = Modifier, navController: NavController) {
                     modifier = Modifier.align(Alignment.CenterHorizontally)
                 )
                 Text(
-                    text = "MyWay é um aplicativo destinado a ajudar os motoristas a terem um trajeto seguro, possibilitando que os usuários marquem  ruas, estradas e trajetos não seguros   para o motorista.  ",
+                    text = "MyWay é um aplicativo destinado a ajudar os motoristas a terem um trajeto seguro, possibilitando que os usuários marquem  ruas, estradas e trajetos não seguros   para os motoristas.  ",
                     color = Color.White,
                     modifier = Modifier.align(Alignment.CenterHorizontally)
                 )
@@ -116,7 +116,7 @@ fun HomeScreen(modifier: Modifier = Modifier, navController: NavController) {
                     .background(colorResource(id = R.color.azul))
             ) {
                 Text(text = "Funcionalidades Principais", color = Color.White)
-                Text(text = "• Marcar rotas recomendados e não recomendados para dirigir(dependendo do horário) ", color = Color.White)
+                Text(text = "• Marcar rotas recomendadas e não recomendadas para dirigir(dependendo do horário) ", color = Color.White)
                 Text(text = "• Compartilhar informações com outros usuários", color = Color.White)
                 Text(text = "• Buscar por locais específicos", color = Color.White)
                 Text(text = "• Ver rotas e pontos de interesse próximos", color = Color.White)
