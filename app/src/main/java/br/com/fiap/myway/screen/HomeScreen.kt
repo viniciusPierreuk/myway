@@ -115,11 +115,11 @@ fun HomeScreen(modifier: Modifier = Modifier, navController: NavController) {
 
                     .background(colorResource(id = R.color.azul))
             ) {
-                Text(text = "Funcionalidades Principais", color = Color.White)
-                Text(text = "• Marcar rotas recomendadas e não recomendadas para dirigir(dependendo do horário) ", color = Color.White)
+                Text(text = "Funcionalidades Principais:", color = Color.White)
+                Text(text = "• Marcar rotas recomendadas e não recomendadas para dirigir (dependendo do horário). ", color = Color.White)
                 Text(text = "• Compartilhar informações com outros usuários", color = Color.White)
-                Text(text = "• Buscar por locais específicos", color = Color.White)
-                Text(text = "• Ver rotas e pontos de interesse próximos", color = Color.White)
+                Text(text = "• Buscar por locais específicos.", color = Color.White)
+                Text(text = "• Ver rotas e pontos de interesses próximos", color = Color.White)
             }
 
             Spacer(modifier = Modifier.height(20.dp))
