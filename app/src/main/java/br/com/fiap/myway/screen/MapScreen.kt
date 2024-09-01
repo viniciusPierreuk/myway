@@ -43,7 +43,7 @@ fun MapScreen(modifier: Modifier = Modifier, navController: NavController) {
 
             Text(
                 text = "My Way",
-                fontSize = 24.sp,
+                fontSize = 28.sp,
                 color = Color.White,
                 fontWeight = FontWeight.Bold,
                 modifier = Modifier.padding(bottom = 24.dp)
@@ -62,9 +62,17 @@ fun MapScreen(modifier: Modifier = Modifier, navController: NavController) {
                 painter = painterResource(id = R.drawable.map2_fiap),
                 contentDescription = "Mapa Simulado",
                 modifier = Modifier
-                    .size(300.dp)
+                    .size(350.dp)
                     .padding(top = 16.dp)
             )
+
+
+
+
+
+
+
+
 
             Spacer(modifier = Modifier.height(16.dp))
 
@@ -72,6 +80,8 @@ fun MapScreen(modifier: Modifier = Modifier, navController: NavController) {
             Column(
                 horizontalAlignment = Alignment.Start,
                 modifier = Modifier.fillMaxWidth()
+                    .background(colorResource(id = R.color.transparent_white))
+                    .padding(16.dp)
             ) {
                 Text(text = "Legenda:", color = Color.White, fontWeight = FontWeight.Bold)
 
@@ -102,7 +112,7 @@ fun MapScreen(modifier: Modifier = Modifier, navController: NavController) {
 
             Spacer(modifier = Modifier.height(24.dp))
 
-            
+
             Text(text = "Regiões Registradas:", color = Color.White, fontWeight = FontWeight.Bold)
 
             Spacer(modifier = Modifier.height(16.dp))
@@ -123,6 +133,7 @@ fun MapScreen(modifier: Modifier = Modifier, navController: NavController) {
         }
     }
 }
+
 
 @Preview(showBackground = true, showSystemUi = true)
 @Composable

@@ -41,8 +41,7 @@ fun LoginScreen (modifier: Modifier = Modifier, navController: NavController) {
    Surface(
        modifier = Modifier
            .fillMaxSize(),
-           color = Color(0xFFAE6DE6)
-
+           color = Color(0xFF5865DB)
 
 
    ) {
@@ -83,7 +82,7 @@ fun LoginScreen (modifier: Modifier = Modifier, navController: NavController) {
 
 
           Image(
-              painter = painterResource(id =br.com.fiap.myway.R.drawable.bim_fiap ),
+              painter = painterResource(id =br.com.fiap.myway.R.drawable.bum_fiap ),
               contentDescription ="Descrição da imagem",
               modifier = Modifier
                   .fillMaxWidth()
