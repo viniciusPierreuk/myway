@@ -84,7 +84,7 @@ fun HomeScreen(modifier: Modifier = Modifier, navController: NavController) {
                     modifier = Modifier.align(Alignment.CenterHorizontally)
                 )
                 Text(
-                    text = "MyWay é um aplicativo destinado a ajudar os motoristas a terem um trajeto seguro, possibilitando que os usuários marquem  ruas, estradas e trajetos não seguros   para os motoristas.  ",
+                    text = "MyWay é um aplicativo destinado a ajudar os motoristas a terem um trajeto seguro, possibilitando que os usuários marquem  ruas, estradas e trajetos não seguros.",
                     color = Color.White,
                     modifier = Modifier.align(Alignment.CenterHorizontally)
                 )
