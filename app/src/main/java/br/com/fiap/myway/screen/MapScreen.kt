@@ -125,7 +125,7 @@ fun MapScreen(modifier: Modifier = Modifier, navController: NavController) {
                             .padding(vertical = 8.dp),
                         horizontalArrangement = Arrangement.SpaceBetween
                     ) {
-                        Text(text = "region", color = Color.White)
+                        Text(text = "região", color = Color.White)
                         Text(text = "Acessível", color = Color.White)
                     }
                 }
